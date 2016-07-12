@@ -1,12 +1,15 @@
-.questionCircle{
-				width: 46px;
-				height: 46px;
-				display: block;
-				text-align: center;
-				line-height: 2.8;
-				margin-bottom: 30px;
-				border: 1px solid #CCCCCC;
-				-moz-border-radius: 50%;
-				-webkit-border-radius: 50%;
-				border-radius: 50%;
-			}
+.login-box-body{
+	font-size: 15px;
+}
+
+.login-box-body .login-box-msg{
+	padding: 0;
+}
+
+.login-box-body .input-group{
+	padding-bottom: 10px;
+}
+.login-box-body .glyphicon{
+	top: 0px;
+}
+			
