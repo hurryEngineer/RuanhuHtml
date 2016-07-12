@@ -1,0 +1,12 @@
+.questionCircle{
+				width: 46px;
+				height: 46px;
+				display: block;
+				text-align: center;
+				line-height: 2.8;
+				margin-bottom: 30px;
+				border: 1px solid #CCCCCC;
+				-moz-border-radius: 50%;
+				-webkit-border-radius: 50%;
+				border-radius: 50%;
+			}
