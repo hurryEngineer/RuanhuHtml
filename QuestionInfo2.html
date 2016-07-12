@@ -32,7 +32,7 @@
 		<link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
 		<!-- bootstrap wysihtml5 - text editor -->
 		<link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-
+		
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -116,7 +116,7 @@
 								<div class="col-md-2 col-xs-2">
 									<ul class="question-upDown">
 										<li title="" data-original-title="This is useful.">
-											<a data-container="body" data-toggle="popover" data-content="You must have 5 points to vote up." href="javascript:void(0)" data-name="vote_up" class="action vote vote-up img-circle " data-original-title="" title="">
+											<a id="up" title="This is useful." data-container="body" data-toggle="popover" data-content="You must have 5 points to vote up." href="javascript:void(0)" data-name="vote_up" class="action vote vote-up img-circle " data-original-title="" title="">
 											<i class="fa fa-chevron-up"></i>
 											</a>
 										</li>
@@ -126,7 +126,7 @@
 										</li>
 									 
 										<li title="" data-original-title="This is not useful">
-											<a data-container="body" data-toggle="popover" data-content="You must have 500 points to vote down." href="javascript:void(0)" data-name="vote_down" class="action vote vote-down img-circle " data-original-title="" title="">
+											<a id="down" title="This is not useful" data-container="body" data-toggle="popover" data-content="You must have 500 points to vote down." href="javascript:void(0)" data-name="vote_down" class="action vote vote-down img-circle " data-original-title="" title="">
 											<i class="fa fa-chevron-down"></i>
 											</a>
 										</li>
@@ -137,7 +137,19 @@
 									<div class="pumping">
 									</div>
 								</div>
-
+								<div>
+									<ul class="question-tags">
+										<li>
+											<a class="q-tag">
+												书籍</a>
+										</li>
+										<li>
+											<a class="q-tag">
+												python</a>
+										</li>
+										
+									</ul>
+								</div>
 								<div class="col-md-10 col-xs-6">
 									<div class="q-ltop-content">
 										<p>我是软件学院的学生,马上上大二了,暑假学python应该看xbxfbdxfbxdfxdg什么书@_@?
@@ -150,13 +162,7 @@
 									<div class="q-lbtm-content">
 
 										<div class="question-cat">
-											<ul class="question-tags">
-												<li>
-													<a class="q-tag">
-														书籍</a>
-												</li>
-												
-											</ul>
+											
 											<div class="clearfix"></div>
 											<a>
 												<span class="author-avatar">
@@ -216,26 +222,24 @@
 
 								<div class="col-md-10 col-xs-6">
 									<div class="q-ltop-content">
-										<p>blalalalalalallaalallalalalallallllamygladmaygodgodfgdodosjahashsfesgnjesgnjsegsgnb,s
+										<p>blalalalalalallaalalsdgasgvngsklvegvlegkvgel
+											lalalalallallllamygladmaygodgodfgdodosjahashsfesgnjesgnjsegsgnb,s
 										</p>
 										<img src="dist/img/photo2.png" class="inset-photo">
 									</div>
 
-									<div class="q-lbtm-content">
-
-										<div class="question-cat">
-											<div class="clearfix"></div>
-											<a>
-												<span class="author-avatar">
+									<div class="question-cat">
+										<div class="clearfix"></div>
+										<a>
+											<span class="author-avatar">
 <img itemprop="image" src="https://cdn.enginethemes.com/qaengine/2015/01/12.jpg" class="avatar" alt=""> </span>
-												<span itemprop="name" class="author-name">admin</span>
-											</a>
-
-											<span itemprop="dateCreated" datetime="on June 9, 2014" class="question-time">
-											发布于2014-07-12 
+											<span itemprop="name" class="author-name">NJU陈振宇</span>
+										</a>
+										<span itemprop="dateCreated" datetime="on June 9, 2014" class="answer-time">
+										2014-07-12 14:32
 										</span>
-										</div>
 									</div>
+									
 								</div>
 							</div>
 							<hr/>
@@ -328,6 +332,14 @@
 			<script src="dist/js/pages/dashboard.js"></script>
 			<!-- AdminLTE for demo purposes -->
 			<script src="dist/js/demo.js"></script>
+			<script src="dist/js/jquery.poshytip.js"></script>
+			  <script>
+			  $(function() {
+			    $("#up").poshytip();
+			  });
+			  </script>
+			
+
 	</body>
 
 </html>
