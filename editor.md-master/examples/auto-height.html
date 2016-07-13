@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="../css/editormd.css" />
         <link rel="shortcut icon" href="https://pandao.github.io/editor.md/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
     </head>
     <body>
         <div id="layout">
@@ -15,6 +16,7 @@
             <div class="btns">
                 <button id="append-btn">Append markdown</button>
             </div>
+            <div class="col-md-6">
             <div id="test-editormd">
                 <textarea style="display:none;">### Settings
 
@@ -25,6 +27,7 @@ var testEditor = editormd("test-editormd", {
 ```
 </textarea>
             </div>
+            </div>
         </div>
         <script src="js/jquery.min.js"></script>
         <script src="../editormd.js"></script>
@@ -33,8 +36,8 @@ var testEditor = editormd("test-editormd", {
 
             $(function() {
                 testEditor = editormd("test-editormd", {
-                    width           : "90%",
-                    autoHeight      : true,
+                    width           : "100%",
+//                  autoHeight      : true,
                     path            : "../lib/",
                     htmlDecode      : "style,script,iframe", 
                     tex             : true,

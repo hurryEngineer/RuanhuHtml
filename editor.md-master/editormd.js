@@ -73,13 +73,22 @@
             "goto-line", "watch", "preview", "fullscreen", "clear", "search", "|",
             "help", "info"
         ],
-        simple : [
+//      simple : [
+//          "undo", "redo", "|", 
+//          "bold", "del", "italic", "quote", "uppercase", "lowercase", "|", 
+//          "h1", "h2", "h3", "h4", "h5", "h6", "|", 
+//          "list-ul", "list-ol", "hr", "|",
+//          "watch", "preview", "fullscreen", "|",
+//          "help", "info"
+//      ],
+		simple : [
             "undo", "redo", "|", 
-            "bold", "del", "italic", "quote", "uppercase", "lowercase", "|", 
-            "h1", "h2", "h3", "h4", "h5", "h6", "|", 
+            "bold", "del", "italic", "quote", "uppercase", "|", 
+            "h3","|", 
             "list-ul", "list-ol", "hr", "|",
+            "link",  "image", "code-block", "table", "datetime", "emoji", "|",
             "watch", "preview", "fullscreen", "|",
-            "help", "info"
+            "help", 
         ],
         mini : [
             "undo", "redo", "|",
@@ -146,7 +155,7 @@
         onpreviewscroll      : function() {},
         
         imageUpload          : false,
-        imageFormats         : ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+        imageFormats         : ["jpg", "jpeg", "gif", "png", "bmp", "webp","JPG"],
         imageUploadURL       : "",
         crossDomainUpload    : false,
         uploadCallbackURL    : "",

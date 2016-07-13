@@ -17,7 +17,7 @@
 				<p>Custom toolbar (icons handler)</p>
 			</header>
 
-			<div class="col-md-6">
+			<div class="col-md-8">
 				<div id="test-editormd">
 					<textarea style="display:none;">### Custom toolbar
 
@@ -36,7 +36,8 @@
 					width: "90%",
 					height: 340,
 					path: '../lib/',
-					watch: false,
+					watch: true,
+                    emoji           : true,
 					toolbarIcons: function() {
 						// Or return editormd.toolbarModes[name]; // full, simple, mini
 						// Using "||" set icons align right.

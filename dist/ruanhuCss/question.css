@@ -33,5 +33,7 @@ ul.question-upDown li:last-child {
 .inset-photo{
 	width: 600px;
 }
+.question-cat{
+	margin-top: 10px;
 }
-}
+
