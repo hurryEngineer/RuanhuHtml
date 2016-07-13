@@ -67,7 +67,7 @@
         <a href="#"><b>软乎</b></a>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
-        <p class="login-box-msg">封装思想，复用经验</p>
+        <p class="login-box-msg">封装经验，复用思想</p>
         <hr />
         <form id="loginForm" method="post">
         	<p class="text-center">账 号</p>
