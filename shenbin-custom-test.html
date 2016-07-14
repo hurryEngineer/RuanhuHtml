@@ -4,8 +4,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>自定义工具栏 - Editor.md examples</title>
-		<link rel="stylesheet" href="editor.md-master/examples/css/style.css" />
-		<link rel="stylesheet" href="editor.md-master/css/editormd.css" />
+		<link rel="stylesheet" href="dist/css/style.css" />
+		<link rel="stylesheet" href="dist/css/editormd.css" />
 		<link rel="shortcut icon" href="https://pandao.github.io/editor.md/favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 	</head>
@@ -28,14 +28,14 @@
 
 		</div>
 
-		<script src="editor.md-master/examples/js/jquery.min.js"></script>
-		<script src="editor.md-master/editormd.js"></script>
+		<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+		<script src="dist/js/editormd.js"></script>
 		<script type="text/javascript">
 			$(function() {
 				var testEditor = editormd("test-editormd", {
 					width: "90%",
 					height: 340,
-					path: 'editor.md-master/lib/',
+					path: 'plugins/editorMdLib/',
 					watch: false,
 					toolbarIcons: function() {
 						// Or return editormd.toolbarModes[name]; // full, simple, mini
