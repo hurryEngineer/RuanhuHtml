@@ -82,8 +82,8 @@
                     buttons : {
                         enter : [lang.buttons.enter, function() {
                             var url  = this.find("[data-url]").val();
-                            var alt  = this.find("[data-alt]").val();
-                            var link = this.find("[data-link]").val();
+//                          var alt  = this.find("[data-alt]").val();
+//                          var link = this.find("[data-link]").val();
 
                             if (url === "")
                             {
