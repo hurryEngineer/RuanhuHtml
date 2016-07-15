@@ -5,8 +5,5 @@ function editorOnLoad(){
 }
 
 function editorOnChange(){
-	console.log("change!");
-	console.log("questionID:"+this.questionID);
-	console.log("markDown:"+this.getMarkdown());
 	localStorage[this.questionID] = this.getMarkdown();
 }

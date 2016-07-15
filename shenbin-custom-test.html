@@ -17,7 +17,7 @@
 			</header>
 
 			<div class="col-md-6">
-				<div id="test-editormd">
+				<div id="editormd">
 					<textarea style="display:none;">
 
 </textarea>
@@ -29,28 +29,31 @@
 		<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 		<script src="dist/js/editormd.js"></script>
 		<script type="text/javascript">
+			questionID = "$question.id";
 			$(function() {
-				var testEditor = editormd("test-editormd", {
-					width: "90%",
-					height: 340,
-					path: 'plugins/editorMdLib/',
-					watch: false,
-					toolbarIcons: function() {
-						return editormd.toolbarModes["simple"]
-					},
-					
-					onload : editorOnLoad,
-					onchange : editorOnChange
+						var testEditor = editormd("editormd", {
+							width: "90%",
+							height: 340,
+							path: 'plugins/editorMdLib/',
+							watch: false,
+							toolbarIcons: function() {
+								return editormd.toolbarModes["simple"]
+							},
 
-					
-				});
-				testEditor.questionID = "1";
-				$(".editormd-markdown-textarea").on("propertychange input", function(){
-				console.log("change")
-				});
-			});
-			
-			
+							onload: editorOnLoad,
+
+						});
+						testEditor.questionID = questionID;
+						testEditor.timelySave = editorOnChange;
+						
+						function savePolling() {
+							testEditor.timelySave();
+							setTimeout(savePolling, 1000);
+						}
+						
+						setTimeout(savePolling, 1000);
+
+					});
 		</script>
 	</body>
 
